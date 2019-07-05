@@ -1,18 +1,18 @@
 function firstNameCheck() {
-    var firstName = document.form.firstName.value;
-    var firstNameRegex = /^[A-Z]{1}[a-z]{0,14}$/;
-    var test = firstNameRegex.test(firstName);
+    let firstName = document.form.firstName.value;
+    let firstNameRegex = /^[A-Z]{1}[a-z]{0,14}$/;
+    let test = firstNameRegex.test(firstName);
     if(!test) {
-        alert("Please insert a correct first name.");
+        alert('Please insert a correct first name.');
     }
 }
 
 function lastNameCheck() {
-    var lastName = document.form.lastName.value;
-    var lastNameRegEx = /^[A-Z]{1}[a-z]{0,14}$/;
-    var test = lastNameRegEx.test(lastName);
+    let lastName = document.form.lastName.value;
+    let lastNameRegEx = /^[A-Z]{1}[a-z]{0,14}$/;
+    let test = lastNameRegEx.test(lastName);
     if(!test) {
-        alert("Please insert a correct last name.");
+        alert('Please insert a correct last name.');
     }
 }
 
@@ -50,11 +50,11 @@ function lastNameCheck() {
 function egnCheck() { 
 //  var flag = true;
  //   const EGN_WEIGHTS = [2,4,8,5,10,9,7,3,6]; // Weights of each of the PIN digits.
-    var egn = document.form.egn.value;
-    var egnReGex = /^\d{10}$/;
-    var test = egnReGex.test(egn);
+    let egn = document.form.egn.value;
+    let egnReGex = /^\d{10}$/;
+    let test = egnReGex.test(egn);
     if(!test) {
-        alert("Please enter a valid EGN.");
+        alert('Please enter a valid EGN.');
     }
  
  
@@ -110,40 +110,40 @@ function egnCheck() {
 
 
 function ageCheck() {
-    var age = document.form.age.value;
-    var ageRegEx = /^\d{2,3}$/
-    var test = ageRegEx.test(age);
+    let age = document.form.age.value;
+    let ageRegEx = /^\d{2,3}$/
+    let test = ageRegEx.test(age);
     if(!test) {
-        alert("Please insert a correct age.");
+        alert('Please insert a correct age.');
     }
     else if((age < 18) || (age > 118)) {
-        alert("Please insert a correct age.");
+        alert('Please insert a correct age.');
     }
 }
 
 function addressCheck() {
-    var address = document.form.address.value;
-    var addressRegEx = /^\w{1,100}$/
-    var test = addressRegEx.test(address);
+    let address = document.form.address.value;
+    let addressRegEx = /^\w{1,100}$/
+    let test = addressRegEx.test(address);
     if(!test) {
-        alert("Please insert a correct address.");
+        alert('Please insert a correct address.');
     }
 }
 
 function passwordCheck() {
-    var password = document.form.password.value;
-    var passREGEX = /^\w{6,18}$/;
-    var test = passREGEX.test(password);
+    let password = document.form.password.value;
+    let passREGEX = /^\w{6,18}$/;
+    let test = passREGEX.test(password);
     if(!test) {
-        alert("Please insert a correct password.");
+        alert('Please insert a correct password.');
     }
 }
 
 function test() {
-    var password = document.form.password.value;
-    var confirm = document.form.confirmPassword.value;
+    let password = document.form.password.value;
+    let confirm = document.form.confirmPassword.value;
     //var test = passREGEX.test(password);
     if(password != confirm) {
-        alert("Please insert a correct password.");
+        alert('Please insert a correct password.');
     }
 }
